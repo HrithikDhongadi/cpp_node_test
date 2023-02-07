@@ -136,7 +136,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/cpp_node_test_node.cpp)
 add_executable(example_node 
   src/example_node.cpp
-  src/main.cpp)
+  nodes/main.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
