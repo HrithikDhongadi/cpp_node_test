@@ -3,6 +3,8 @@
 ExampleNode::ExampleNode() {
     sub_ = nh_.subscribe("example_topic", 10, &ExampleNode::callback, this);
     pub_ = nh_.advertise<std_msgs::Int16>("example_topic", 10);
+
+    ROS_INFO("example_node has Started.");
 }
 
 void ExampleNode::runSpin() {
